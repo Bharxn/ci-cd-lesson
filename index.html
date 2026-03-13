@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interactive Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Demo</h1>
+        
+        <div class="card">
+            <h2>Counter</h2>
+            <p class="counter-value" id="counter">0</p>
+            <div class="button-group">
+                <button id="decrease">-</button>
+                <button id="reset">Reset</button>
+                <button id="increase">+</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Color Theme</h2>
+            <div class="color-buttons">
+                <button class="color-btn" data-color="#3498db">Blue</button>
+                <button class="color-btn" data-color="#e74c3c">Red</button>
+                <button class="color-btn" data-color="#2ecc71">Green</button>
+                <button class="color-btn" data-color="#9b59b6">Purple</button>
+                <button class="color-btn" data-color="#f39c12">Orange</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Message</h2>
+            <input type="text" id="messageInput" placeholder="Type a message...">
+            <button id="showMessage">Show Message</button>
+            <p id="displayMessage"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
