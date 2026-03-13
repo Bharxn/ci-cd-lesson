@@ -3,7 +3,10 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   output: "export",
-  basePath: "/ci-cd-lesson"
+  basePath: "/ci-cd-lesson",
+  images: {
+    unoptimized: true,
+  }
 };
 
 export default nextConfig;
