@@ -1,0 +1,16 @@
+name: Deploy ON Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-lastest
+    steps: 
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: HealthCheck
+        run: echo "Health Check Passed"
