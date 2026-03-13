@@ -26,3 +26,19 @@ jobs:
 
       - name: HealthCheck
         run: echo "Health Check Passed"
+
+      - name: Upload artifact for deployment
+        uses: action/upload-pages-artifact@v3
+        with:
+          path: ./out
+  
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-lastest
+    needs: check
+    steps:
+      - name: Deploy To GitHub Pages
+        id: deployment
+        uses: action/deploy-pages@v4
