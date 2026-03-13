@@ -7,7 +7,7 @@ on:
 
 jobs:
   check:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-lastest 
     steps: 
       - name: Checkout Code
         uses: actions/checkout@v4
